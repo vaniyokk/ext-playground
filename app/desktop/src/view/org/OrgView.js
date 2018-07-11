@@ -4,7 +4,6 @@ Ext.define('MyApp.view.users.OrgView',{
 	cls: 'orgview',
 	controller: 'orgviewcontroller',
 	viewModel: {type: 'orgviewmodel'},
-	title: 'Users from RADServer',
 	layout: 'fit',
 	items: [
 		{
