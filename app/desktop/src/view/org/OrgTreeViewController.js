@@ -8,7 +8,6 @@ Ext.define('MyApp.view.org.orgtree.OrgTreeViewController', {
 
       if (selection.length) {
           selectedNode = selection[0];
-          console.log(selectedNode instanceof MyApp.model.tree.Territory);
 
           if (selectedNode instanceof MyApp.model.tree.Territory) {
               button.setText('Add Country');
