@@ -6,5 +6,8 @@ Ext.define('MyApp.model.tree.Territory', {
   fields: [{
       name: "name",
       convert: undefined
+  },{
+    name: 'iconCls',
+    defaultValue: 'x-fa fa-globe'
   }]
 });

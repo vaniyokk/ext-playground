@@ -6,5 +6,8 @@ Ext.define('MyApp.model.tree.Country', {
   fields: [{
       name: "name",
       convert: undefined
+  },{
+    name: 'iconCls',
+    defaultValue: 'x-fa fa-flag'
   }]
 });
