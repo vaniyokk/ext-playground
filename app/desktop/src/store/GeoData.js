@@ -8,8 +8,7 @@ Ext.define('MyApp.store.GeoData', {
 
   model: 'MyApp.model.tree.Territory',
 
-  data: {
-    children: [{
+  data: [{
         mtype: 'Territory',
         name: 'North America',
         children :[{
@@ -225,8 +224,7 @@ Ext.define('MyApp.store.GeoData', {
                 leaf: true
             }]
         }]
-    }]
-  },
+    }],
 
   lazyFill: false
 });

@@ -8,7 +8,9 @@ Ext.define('MyApp.view.org.orgtree.OrgTreeView', {
 
   height: 400,
   rootVisible: false,
-  store: 'geodata',
+  store: {
+    type: 'geodata'
+  },
   width: 600,
 
   listeners: {
