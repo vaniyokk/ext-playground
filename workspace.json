@@ -7,7 +7,7 @@
     "dir": "${workspace.dir}/build"
   },
   "packages": {
-    "dir": "${workspace.dir}/packages",
+    "dir": "${workspace.dir}/packages,${workspace.dir}/node_modules/@sencha",
     "extract": "${workspace.dir}/packages/remote"
   }
 }
