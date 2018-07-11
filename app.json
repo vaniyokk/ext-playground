@@ -1,38 +1,38 @@
 {
-  "name": "MyApp",
-  "namespace": "MyApp",
-  "version": "1.0.0.0",
-  "framework": "ext",
-  "template": "moderndesktop",
-  "indexHtmlPath": "index.html",
-  "requires": [
+	"name": "MyApp",
+	"namespace": "MyApp",
+	"version": "1.0.0.0",
+	"framework": "ext",
+	"template": "moderndesktop",
+	"indexHtmlPath": "index.html",
+	"requires": [
 		"font-awesome",
 		"treegrid",
 		"ux"
-  ],
+	],
 
 	"builds": {
 		"desktop": {
 			"toolkit": "modern",
 			"theme": "theme-material",
-      "sass": {
-        "generated": {
-          "var": "modern/sass/save.scss",
-          "src": "modern/sass/save"
-        }
-      }
+			"sass": {
+				"generated": {
+					"var": "modern/sass/save.scss",
+					"src": "modern/sass/save"
+				}
+			}
 		}
 	},
 
-	"classpath": ["app/shared/src","app/${build.id}/src"],
-	"overrides": ["app/shared/overrides","app/${build.id}/overrides"],
+	"classpath": ["app/shared/src", "app/${build.id}/src"],
+	"overrides": ["app/shared/overrides", "app/${build.id}/overrides"],
 
 	"sass": {
 		"namespace": "MyApp",
 
-    "etc": [
-      "sass/etc/all.scss"
-    ],
+		"etc": [
+			"sass/etc/all.scss"
+		],
 		"var": [
 			"app/shared/sass/var.scss",
 			"app/${build.id}/sass/var.scss"
@@ -43,10 +43,14 @@
 		]
 	},
 
-	"resources": [
-		{ "path": "resources", "output": "shared" }
+	"resources": [{
+			"path": "resources",
+			"output": "shared"
+		}
 
-		,{ "path": "resources/${build.id}" }
+		, {
+			"path": "resources/${build.id}"
+		}
 
 	],
 
@@ -55,35 +59,39 @@
 		"page": "index.html",
 		"manifest": "generatedFiles/${build.id}.json",
 		"js": "generatedFiles/${build.id}/app.js",
-		"appCache": {"enable": false},
+		"appCache": {
+			"enable": false
+		},
 		"resources": {
 			"path": "${build.id}/resources",
 			"shared": "resources"
 		}
 	},
-	
+
 	"fashion": {
-"missingParameters": "error",
-		"inliner": {"enable": false}
+		"missingParameters": "error",
+		"inliner": {
+			"enable": false
+		}
 	},
 
-	"js": [
-		{
-			"path": "app.js",
-			"bundle": true
-		}
-	],
+	"js": [{
+		"path": "app.js",
+		"bundle": true
+	}],
 
-	"classic": {"js": []},
-	"modern": {"js": []},
+	"classic": {
+		"js": []
+	},
+	"modern": {
+		"js": []
+	},
 
-	"css": [
-		{
-			"path": "${build.out.css.path}",
-			"bundle": true,
-			"exclude": ["fashion"]
-		}
-	],
+	"css": [{
+		"path": "${build.out.css.path}",
+		"bundle": true,
+		"exclude": ["fashion"]
+	}],
 
 	"loader": {
 		"cache": false,
@@ -118,14 +126,14 @@
 
 	"bootstrap": {
 		"base": "${app.dir}/generatedFiles",
-"manifest": "${build.id}.json",
+		"manifest": "${build.id}.json",
 		"microloader": "bootstrap.js",
 		"css": "bootstrap.css"
 	},
 
 	"cache": {
-			"enable": false,
-			"deltas": "${build.id}/deltas"
+		"enable": false,
+		"deltas": "${build.id}/deltas"
 	},
 
 	"appCache": {
