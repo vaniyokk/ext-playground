@@ -1,12 +1,14 @@
+
 Ext.define('MyApp.view.org.orgtree.OrgTreeView', {
   extend: 'Ext.grid.Tree',
+
   xtype: 'orgtreeview',
   title: 'Heterogeneous Geographical Tree',
   controller: 'orgtreeviewcontroller',
 
   height: 400,
   rootVisible: false,
-  store: 'GeoData',
+  store: 'geodata',
   width: 600,
 
   listeners: {

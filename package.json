@@ -24,9 +24,10 @@
     "defaultverbose": "no"
   },
   "dependencies": {
+    "@sencha/ext": "^6.6.0",
     "@sencha/ext-modern": "^6.6.0",
     "@sencha/ext-modern-theme-material": "^6.6.0",
-    "@sencha/ext": "^6.6.0"
+    "@sencha/ext-ux": "^6.6.0"
   },
   "devDependencies": {
     "@sencha/ext-webpack-plugin": "~1.0.0",

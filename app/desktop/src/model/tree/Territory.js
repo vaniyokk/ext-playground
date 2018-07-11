@@ -1,13 +1,10 @@
 Ext.define('MyApp.model.tree.Territory', {
-  extend: 'Ext.data.TreeModel',
+  extend: 'MyApp.model.tree.Base',
   entityName: 'Territory',
   idProperty: 'name',
   glyph: 'xf0ac@FontAwesome',
   fields: [{
-      name: 'name',
+      name: "name",
       convert: undefined
-  },{
-      name: 'iconCls',
-      defaultValue: 'x-fa fa-globe'
   }]
 });
