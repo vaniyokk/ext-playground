@@ -2,16 +2,13 @@
 Ext.define('MyApp.view.org.orgtree.OrgTreeView', {
   extend: 'Ext.grid.Tree',
 
-  xtype: 'orgtreeview',
-  title: 'Heterogeneous Geographical Tree',
+  xtype: 'orgview',
   controller: 'orgtreeviewcontroller',
 
-  height: 400,
   rootVisible: false,
   store: {
     type: 'geodata'
   },
-  width: 600,
 
   listeners: {
       selectionchange: 'onSelectionChange'
